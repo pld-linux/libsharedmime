@@ -1,0 +1,26 @@
+--- makefile.orig	2004-12-15 09:58:42.797419048 +0100
++++ makefile	2004-12-15 09:59:55.381384608 +0100
+@@ -6,7 +6,7 @@
+ 
+ # build mode, should be 'Release' or 'Debug'
+ ifndef BUILD
+-	BUILD = Debug
++	BUILD = Release
+ endif
+ 
+ VPATH = %.cpp \
+@@ -61,10 +61,10 @@
+ 
+ # install the files
+ install :
+-	cp $(BUILD)/$(targetfile) /usr/local/lib
+-	chmod 755 /usr/local/lib/$(targetfile)
+-	cp mime-types.h /usr/local/include
+-	chmod 644 /usr/local/include/mime-types.h
++	cp $(BUILD)/$(targetfile) $(DESTDIR)/$(LIBDIR)
++	chmod 755 $(DESTDIR)/$(LIBDIR)/$(targetfile)
++	cp mime-types.h $(DESTDIR)/$(PREFIX)/include
++	chmod 644 $(DESTDIR)/$(PREFIX)/include/mime-types.h
+ 	@echo Installed $(BUILD) Library.
+ 
+ # build disribution archive
