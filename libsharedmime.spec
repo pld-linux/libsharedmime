@@ -1,5 +1,5 @@
 Summary:	Reads the Shared Mime Info database
-Summary(pl):	Odczytuje baze Shared Mime Info
+Summary(pl):	Biblioteka czytaj±ca bazê Shared Mime Info
 Name:		libsharedmime
 Version:	0.5
 Release:	1
@@ -19,7 +19,7 @@ returns you the MIME-TYPE of a file.
 
 %description -l pl
 Biblioteka odczytuje informacje z bazy Shared Mime Info
-(freedesktop.org) i zwraca typ MIME dla pliku.
+(freedesktop.org) i zwraca typ MIME pliku.
 
 %package devel
 Summary:	Header files for libsharedmime library
@@ -50,7 +50,6 @@ install -d $RPM_BUILD_ROOT/%{_includedir}
 	DESTDIR=$RPM_BUILD_ROOT \
 	PREFIX=%{_prefix} \
 	LIBDIR=%{_libdir}
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
