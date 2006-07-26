@@ -10,7 +10,6 @@ Source0:	http://www.memecode.com/src/%{name}-%{version}.tar.bz2
 URL:		http://www.memecode.com/libsharedmime.php
 Patch0:		%{name}-destdir.patch
 BuildRequires:	gcc-c++
-BuildRequires:	make
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,8 +42,8 @@ Pliki nag³ówkowe biblioteki libsharedmime.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/%{_libdir}
-install -d $RPM_BUILD_ROOT/%{_includedir}
+install -d $RPM_BUILD_ROOT%{_libdir}
+install -d $RPM_BUILD_ROOT%{_includedir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
