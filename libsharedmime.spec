@@ -1,5 +1,5 @@
 Summary:	Reads the Shared Mime Info database
-Summary(pl):	Biblioteka czytaj±ca bazê Shared Mime Info
+Summary(pl.UTF-8):   Biblioteka czytajÄ…ca bazÄ™ Shared Mime Info
 Name:		libsharedmime
 Version:	0.5
 Release:	1
@@ -16,21 +16,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This library reads the freedesktop Shared Mime Info database and
 returns you the MIME-TYPE of a file.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka odczytuje informacje z bazy Shared Mime Info
 (freedesktop.org) i zwraca typ MIME pliku.
 
 %package devel
 Summary:	Header files for libsharedmime library
-Summary(pl):	Pliki nag³ówkowe biblioteki libsharedmime
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libsharedmime
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libsharedmime library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki libsharedmime.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki libsharedmime.
 
 %prep
 %setup -q -n %{name}
