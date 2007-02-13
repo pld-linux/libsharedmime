@@ -1,5 +1,5 @@
 Summary:	Reads the Shared Mime Info database
-Summary(pl.UTF-8):   Biblioteka czytająca bazę Shared Mime Info
+Summary(pl.UTF-8):	Biblioteka czytająca bazę Shared Mime Info
 Name:		libsharedmime
 Version:	0.5
 Release:	1
@@ -22,7 +22,7 @@ Biblioteka odczytuje informacje z bazy Shared Mime Info
 
 %package devel
 Summary:	Header files for libsharedmime library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libsharedmime
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libsharedmime
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
