@@ -34,7 +34,7 @@ Pliki nagłówkowe biblioteki libsharedmime.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__make}
